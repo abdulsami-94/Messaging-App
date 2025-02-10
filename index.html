@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+            <div class="logo">BlogSpace</div>
+        </div>
+        
+        <div class="user-section">
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                🌓 Dark Mode
+            </div>
+            <div class="auth-buttons">
+                <button class="btn" onclick="showLogin()">Login</button>
+                <button class="btn" onclick="showSignup()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="nav-item">📥 Inbox 1</div>
+        <div class="nav-item">📥 Inbox 2</div>
+        <div class="nav-item">📥 Inbox 3</div>
+        <div class="nav-item">📥 Inbox 4</div>
+        <div class="nav-item">📥 Inbox 5</div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Welcome to BlogSpace</h1>
+        <p>Start writing your thoughts and share them with the world!</p>
+    </main>
+
+    <button class="btn add-blog-btn" onclick="createNewBlog()">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
